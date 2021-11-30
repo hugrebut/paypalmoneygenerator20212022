@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>netcoreapp3.1</TargetFramework>
+        <GeneratePackageOnBuild Condition="'$(Configuration)'=='RELEASE'">true</GeneratePackageOnBuild>
+        <Title>MyBuildTask</Title>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+        <PackageId>MyBuildTask</PackageId>
+        <NuspecFile>MyBuildTask.nuspec</NuspecFile>
+        <LangVersion>8</LangVersion>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <None Remove="MyBuildTask.nuspec" />
+      <Content Include="MyBuildTask.nuspec" />
+    </ItemGroup>
+</Project>
